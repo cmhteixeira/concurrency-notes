@@ -18,3 +18,15 @@ Concurrent queues => usefull to implement the producer-consumer pattern.
 Concurrent maps and sets => usefull to encode program state.  
 This is a fundamental difference.
 
+## Concurrect data structures
+### Treiber stack
+```scala
+class TreiberStack[A] {
+  def push(a: A): Unit = ???
+  def pop(): A = ???
+}
+```
+
+- Concurrent stack abstraction
+- It is a shared stack
+- Remember stacks are LIFO
